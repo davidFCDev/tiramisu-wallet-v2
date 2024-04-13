@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/register.css" />
+  </head>
+  <body>
+    <header class="register-header">
+      <a href="/index.html" class="logo">
+        <img src="/images/logo.png" alt="Tiramisu Wallet" width="80" />
+      </a>
+      <h2><span>Tiramisu</span> Wallet</h2>
+      <p>
+        Please create your Tiramisu Wallet account. Select your username and
+        password.
+      </p>
+    </header>
+    <main class="main-container">
+      <section class="register">
+        <div class="register-card">
+          <div class="register-img-container">
+            <h1><span>Create</span> Account.</h1>
+            <img src="/images/Bitcoin.svg" alt="Bitcoin" />
+          </div>
+          <div class="register-text">
+            <p>
+              No email is required as we aim to make the wallet non-custodial.
+              This also prevents us from sending any kind of marketing.
+            </p>
+            <p>
+              Please join our telegram group
+              <a href="#" style="text-decoration: underline; color: blueviolet"
+                >tiramisuwallet</a
+              >
+              as that is where we will be sharing updates.
+            </p>
+          </div>
+          <form
+            class="register-form"
+            method="POST"
+            onsubmit="register(); return false;"
+          >
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Username"
+            />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+            />
+            <input
+              type="password"
+              id="password-confirmation"
+              name="password-confirmation"
+              placeholder="Password Confirmation"
+            />
+            <div class="register-check">
+              <div class="register-robot">
+                <input type="checkbox" id="terms" name="terms" />
+                <label for="terms"> I'm not a robot </label>
+              </div>
+              <img src="/images/no-image.svg" alt="No-image" width="100" />
+            </div>
+            <button class="btn" type="submit">
+              <h2>Register</h2>
+            </button>
+          </form>
+        </div>
+        <div class="register-final-text">
+          <p>
+            Already have an account?
+            <a href="/login.html">Sign-in here</a>
+          </p>
+          <p>
+            Still need help?
+            <a href="#">Contact Support</a>
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

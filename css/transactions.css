@@ -1,0 +1,232 @@
+/** Transactions Page **/
+
+/** Import Asset page */
+
+.box-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-blue4);
+  padding: 2rem;
+  border-radius: 15px;
+  border: 2px solid var(--color-violet);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 1.7;
+  letter-spacing: 0.5px;
+  gap: 1.5rem;
+}
+
+.box-content p {
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.box-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .box-container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--color-blue4);
+    padding: 1rem;
+    border-radius: 15px;
+    border: 2px solid var(--color-violet);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1.7;
+    letter-spacing: 0.5px;
+    gap: 1.5rem;
+  }
+
+  .box-content p {
+    font-size: 1rem;
+    font-weight: 200;
+  }
+
+  .box-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+}
+
+.transactions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.responsive-transactions-container {
+  display: none;
+}
+
+.responsive-transaction {
+  display: none;
+}
+
+.transaction-selected-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.transaction {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1.3rem 2rem;
+  border-radius: 15px;
+  background-color: var(--color-primary);
+  box-shadow: 0 0 10px rgba(138, 131, 131, 0.1);
+}
+
+
+@media (max-width: 1024px) {
+  .transactions-container {
+    display: none;
+  }
+  .transaction {
+    display: none;
+  }
+  .responsive-transactions-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .responsive-transaction {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-radius: 15px;
+    background-color: var(--color-blue2);
+    box-shadow: 0 0 10px rgba(138, 131, 131, 0.1);
+  }
+  .responsive-transaction-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .responsive-transaction-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+  }
+  .responsive-transaction-actions {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .responsive-transaction-details h3 {
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: var(--color-skyblue);
+  }
+  .responsive-transaction-details h4 {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--color-skyblue);
+  }
+  .responsive-transaction-details span {
+    font-size: 0.6rem;
+    font-weight: 200;
+  }
+  .responsive-transaction-details p {
+    font-size: 0.6rem;
+    font-weight: 600;
+    color: rgb(180, 180, 180);
+  }
+  .responsive-transaction button {
+    font-size: 0.6rem;
+    font-weight: 800;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+  }
+}
+
+.transaction-name {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.transaction-name h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--color-skyblue);
+}
+
+.transaction-name span {
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.name-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.transaction-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.transaction-detail h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--color-skyblue);
+}
+
+.transaction-detail p {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: rgb(180, 180, 180);
+}
+
+.transaction button {
+  font-size: 1.4rem;
+  font-weight: 800;
+  padding: 0.6rem 3rem;
+  border-radius: 20px;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .transaction {
+    padding: 1.3rem 1.5rem;
+  }
+
+  .transaction button {
+    width: 150px;
+    font-size: 1rem;
+    padding: 0.6rem 2rem;
+  }
+}
+
+#transactionImage {
+  animation: rotateTransaction 1s linear infinite;
+}
+
+/* Definir la animación de rotación */
+@keyframes rotateTransaction {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

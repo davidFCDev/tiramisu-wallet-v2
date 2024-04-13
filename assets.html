@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Wallet</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/assets.css" />
+  </head>
+  <body>
+    <!-- DESKTOP -->
+    <nav class="sidebar">
+      <div class="tiramisu-logo">
+        <a href="/index.html" class="logo">
+          <img src="/images/logo.png" alt="Tiramisu Wallet" width="75" />
+        </a>
+        <h2><span>Tiramisu</span> Wallet</h2>
+      </div>
+      <div class="routes">
+        <a href="/dashboard.html" class="route">
+          <img src="/images/Meter.svg" alt="Home" width="22" />
+          Dashboard
+        </a>
+        <a href="/my-wallet.html" class="route">
+          <img src="/images/WalletSmall.svg" alt="My Wallet" width="22" />
+          My wallet
+        </a>
+        <a href="/add-wallet.html" class="route">
+          <img src="/images/Plus.svg" alt="Add Wallet" width="22" />
+          Add new wallet
+        </a>
+        <a href="/assets.html" class="route selected">
+          <img src="/images/Coins.svg" alt="Assets" width="22" />
+          Assets
+        </a>
+        <a href="/trading.html" class="route">
+          <img src="/images/SmallSwap.svg" alt="Trading" width="22" />
+          Trading
+        </a>
+        <a href="/import-asset.html" class="route">
+          <img src="/images/Download.svg" alt="Import New Asset" width="22" />
+          Import new asset
+        </a>
+        <a href="/mint-asset.html" class="route">
+          <img src="/images/Download.svg" alt="Mint Assets" width="22" />
+          Mint new assets
+        </a>
+        <a href="/deposit-assets.html" class="route">
+          <img src="/images/Download2.svg" alt="Deposit Assets" width="22" />
+          Deposit assets
+        </a>
+        <a href="/withdraw-asset.html" class="route">
+          <img src="/images/Coliseum.svg" alt="Withdraw assets" width="22" />
+          Withdraw assets
+        </a>
+        <a href="/transactions.html" class="route">
+          <img src="/images/Clock.svg" alt="Transactions" width="22" />
+          Transactions
+        </a>
+        <a href="/wallet-home.html" class="route">
+          <img src="/images/Home.svg" alt="Wallet Home Page" width="22" />
+          Wallet home page
+        </a>
+        <a href="/scan-home.html" class="route">
+          <img src="/images/Qr.svg" alt="Scan" width="22" />
+          Scan
+        </a>
+      </div>
+      <a href="/my-wallet.html" class="balance-always-on-desktop">
+        <img src="/images/BitcoinLetter.svg" alt="balance" width="35" />
+        <div class="balance-always-on">
+          <span class="balance"><b>Bitcoin:</b> 423143 SAT</span>
+          <span class="pending"><b>Pending:</b> 000000 SAT</span>
+        </div>
+      </a>
+    </nav>
+    <nav class="topbar">
+      <!-- Notifications Modal -->
+      <div class="notifications-modal">
+        <div class="notifications-title">
+          <h3>Notifications</h3>
+          <img src="/images/Notification.svg" alt="Close" width="24" />
+        </div>
+        <p>You have 0 notifications today</p>
+        <h4>Today</h4>
+        <ul>
+          <li class="notification">
+            <div>
+              <img src="/images/Point.svg" alt="Point" />
+              <img src="/images/ImageUser.svg" alt="Profile" width="50" />
+            </div>
+            <div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+              <span>Time & Date</span>
+            </div>
+          </li>
+          <li class="notification">
+            <div>
+              <img src="/images/Point.svg" alt="Point" />
+              <img src="/images/Check.svg" alt="Check" width="50" />
+            </div>
+            <div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+              <span>Time & Date</span>
+            </div>
+          </li>
+          <li class="notification">
+            <div>
+              <img src="/images/Point.svg" alt="Point" />
+              <img src="/images/ImageUser.svg" alt="Profile" width="50" />
+            </div>
+            <div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+              <span>Time & Date</span>
+            </div>
+          </li>
+        </ul>
+        <h4>This Week</h4>
+        <ul>
+          <li class="notification">
+            <div>
+              <img src="/images/Point.svg" alt="Point" />
+              <img src="/images/Check.svg" alt="Check" width="50" />
+            </div>
+            <div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+              <span>Time & Date</span>
+            </div>
+          </li>
+          <li class="notification">
+            <div>
+              <img src="/images/Point.svg" alt="Point" />
+              <img src="/images/ImageUser.svg" alt="Profile" width="50" />
+            </div>
+            <div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+              <span>Time & Date</span>
+            </div>
+          </li>
+          <li class="notification">
+            <div>
+              <img src="/images/Point.svg" alt="Point" />
+              <img src="/images/ImageUser.svg" alt="Profile" width="50" />
+            </div>
+            <div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+              <span>Time & Date</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- Notifications Modal end -->
+      <!-- User Modal -->
+      <div class="user-modal">
+        <div>
+          <img src="/images/MyWallet.svg" alt="My wallet" width="26" />
+          <p>My wallet</p>
+        </div>
+        <div>
+          <img
+            src="/images/Logout.svg"
+            alt="Logout"
+            width="24"
+            style="padding-left: 1px"
+          />
+          <p>Logout</p>
+        </div>
+      </div>
+      <!-- User Modal end -->
+      <div class="topbar-title">
+        <img
+          src="/images/BlueCoins.svg"
+          alt="Available Currencies"
+          width="32"
+        />
+        <h2>Available Currencies</h2>
+      </div>
+      <div class="profile-container">
+        <div class="search">
+          <img src="/images/Search.svg" alt="Search" width="24" />
+          <input type="text" placeholder="Search" />
+        </div>
+        <img
+          class="notification-icon topbar-icon"
+          src="/images/Ring.svg"
+          alt="Notification"
+          width="24"
+        />
+        <img src="/images/ImageUser.svg" alt="Profile" class="user-image" />
+        <img
+          class="topbar-icon"
+          id="dropDown"
+          src="/images/WhiteDownArrow.svg"
+          alt="Arrow Down"
+          width="20px"
+          style="cursor: pointer"
+        />
+      </div>
+    </nav>
+    <!-- DESKTOP END -->
+
+    <!-- MOBILE -->
+    <nav class="responsive-topbar">
+      <!-- Notifications Modal -->
+      <div class="responsive-notifications-modal">
+        <div class="notifications-title">
+          <h3>Notifications</h3>
+          <img src="/images/Notification.svg" alt="Notifications" width="20" />
+        </div>
+        <p>You have 0 notifications today</p>
+        <h4>Today</h4>
+        <ul>
+          <li class="notification">
+            <div class="notification-image">
+              <img src="/images/Point.svg" alt="Point" />
+              <img src="/images/ImageUser.svg" alt="Profile" width="40" />
+            </div>
+            <div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+              <span>Time & Date</span>
+            </div>
+          </li>
+          <li class="notification">
+            <div class="notification-image">
+              <img src="/images/Point.svg" alt="Point" />
+              <img src="/images/ImageUser.svg" alt="Profile" width="40" />
+            </div>
+            <div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+              <span>Time & Date</span>
+            </div>
+          </li>
+          <li class="notification">
+            <div class="notification-image">
+              <img src="/images/Point.svg" alt="Point" />
+              <img src="/images/ImageUser.svg" alt="Profile" width="40" />
+            </div>
+            <div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+              <span>Time & Date</span>
+            </div>
+          </li>
+        </ul>
+        <h4>This Week</h4>
+        <ul>
+          <li class="notification">
+            <div class="notification-image">
+              <img src="/images/Point.svg" alt="Point" />
+              <img src="/images/Check.svg" alt="Check" width="40" />
+            </div>
+            <div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+              <span>Time & Date</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- Notifications Modal end -->
+      <div class="first-row-topbar">
+        <div class="responsive-logo">
+          <a href="/index.html" class="logo">
+            <img src="/images/logo.png" alt="Tiramisu Wallet" width="75" />
+          </a>
+          <h2><span>Tiramisu</span> Wallet</h2>
+        </div>
+        <a href="/my-wallet.html">
+          <div class="balance-always-on">
+            <span class="balance"><b>Bitcoin:</b> 423143 SAT</span>
+            <span class="pending"><b>Pending:</b> 000000 SAT</span>
+          </div>
+        </a>
+        <img
+          class="responsive-notification-icon"
+          src="/images/Ring.svg"
+          alt="Notification"
+          width="24"
+        />
+      </div>
+      <div class="search-container">
+        <div class="search">
+          <img src="/images/Search.svg" alt="Search" />
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+      <div class="topbar-title">
+        <img
+          src="/images/PurpleCoins.svg"
+          alt="Available Currencies"
+          width="32"
+        />
+        <h2>Available Currencies</h2>
+      </div>
+    </nav>
+    <nav class="responsive-bottombar">
+      <div class="responsive-menu-modal">
+        <div class="responsive-modal-routes">
+          <a href="#" class="responsive-modal-route">
+            <img src="/images/WhiteLogout.svg" alt="Logout" />
+            <span>Logout</span>
+          </a>
+          <a href="add-wallet.html" class="responsive-modal-route">
+            <img src="/images/Plus.svg" alt="Add" />
+            <span>Add new wallet</span>
+          </a>
+          <a href="import-asset.html" class="responsive-modal-route">
+            <img src="/images/Download2.svg" alt="Upload" />
+            <span>Import new asset</span>
+          </a>
+          <a href="mint-asset.html" class="responsive-modal-route">
+            <img src="/images/Download2.svg" alt="Upload" />
+            <span>Mint new asset</span>
+          </a>
+          <a href="transactions.html" class="responsive-modal-route">
+            <img src="/images/Clock.svg" alt="Transactions" />
+            <span>Transactions</span>
+          </a>
+          <a href="dashboard.html" class="responsive-modal-route">
+            <img src="/images/Home.svg" alt="Dashboard" />
+            <span>Wallet home page</span>
+          </a>
+        </div>
+      </div>
+      <a href="trading.html" class="swap-container">
+        <img src="/images/WhiteSwap.svg" alt="Swap" />
+      </a>
+      <div class="bottombar-container">
+        <a href="dashboard.html" class="bottombar-item">
+          <img src="/images/Meter.svg" alt="Dashboard" width="30" />
+          <span>Dashboard</span>
+        </a>
+        <a href="my-wallet.html" class="bottombar-item">
+          <img src="/images/WalletSmall.svg" alt="Wallet" width="26" />
+          <span>My wallet</span>
+        </a>
+      </div>
+      <div class="bottombar-container">
+        <a href="assets.html" class="bottombar-item" style="margin-right: 1rem">
+          <img src="/images/BlueCoins.svg" alt="Assets" width="32" />
+          <span>Assets</span>
+        </a>
+        <div class="bottombar-item responsive-menu-btn">
+          <img src="/images/Menu.svg" alt="Menu" width="28" />
+          <span>More</span>
+        </div>
+      </div>
+    </nav>
+    <!-- MOBILE END -->
+
+    <main class="container-page">
+      <div class="assets-section">
+        <!-- Buttons -->
+        <div class="btn-container">
+          <button
+            id="currencyBtn"
+            class="btn"
+            data-show="currency-section"
+            data-hide="nft-section,all-section"
+          >
+            <img src="/images/Coins.svg" alt="Currencies" width="32" />
+            <h3>Currencies</h3>
+          </button>
+          <button
+            id="nftBtn"
+            class="outline-btn"
+            data-show="nft-section"
+            data-hide="currency-section,all-section"
+          >
+            <img
+              src="/images/Collections.svg"
+              alt="NFT Collections"
+              width="26"
+            />
+            <h3>NFT Collections</h3>
+          </button>
+          <button
+            id="allBtn"
+            class="outline-btn"
+            data-show="all-section"
+            data-hide="currency-section,nft-section"
+          >
+            <img src="/images/Diamond.svg" alt="All NFTs" width="32" />
+            <h3>All NFTs</h3>
+          </button>
+        </div>
+
+        <!-- Custom Select -->
+        <div class="custom-select-container">
+          <select id="sectionSelector">
+            <option value="currency-section">Currencies</option>
+            <option value="nft-section">NFT Collections</option>
+            <option value="all-section">All NFTs</option>
+          </select>
+        </div>
+
+        <!-- Currencies Section -->
+        <div class="assets-container" id="currency-section">
+          <div class="cards-container" id="currenciesCardContainer">
+            <!-- Card List Here -->
+          </div>
+          <!-- Page Selector -->
+          <div class="page-selector">
+            <button id="prevBtn" onclick="prevPage()">
+              <img src="/images/ArrowLeft.svg" alt="Previous" width="10" />
+              Previous
+            </button>
+            <div class="page-number-selected" id="pageNumber">1</div>
+            <div class="page-number" id="pageNumber">2</div>
+            <button id="nextBtn" onclick="nextPage()">
+              Next
+              <img src="/images/ArrowRight.svg" alt="Next" width="10" />
+            </button>
+          </div>
+        </div>
+        <!-- Currencies Section end -->
+
+        <!-- NFT Collection Section -->
+        <div class="assets-container" id="nft-section" style="display: none">
+          <div class="cards-container" id="nftsCardContainer">
+            <!-- Card List Here -->
+          </div>
+          <!-- Page Selector -->
+          <div class="page-selector">
+            <button id="prevBtn" onclick="prevPage()">
+              <img src="/images/ArrowLeft.svg" alt="Previous" width="10" />
+              Previous
+            </button>
+            <div class="page-number-selected" id="pageNumber">1</div>
+            <div class="page-number" id="pageNumber">2</div>
+            <button id="nextBtn" onclick="nextPage()">
+              Next
+              <img src="/images/ArrowRight.svg" alt="Next" width="10" />
+            </button>
+          </div>
+        </div>
+        <!-- NFT Collection Section end -->
+
+        <!-- All NFTs Section -->
+        <div class="assets-container" id="all-section" style="display: none">
+          <div class="cards-container" id="allNftsCardContainer">
+            <!-- Card List Here -->
+          </div>
+          <!-- Page Selector -->
+          <div class="page-selector">
+            <button id="prevBtn" onclick="prevPage()">
+              <img src="/images/ArrowLeft.svg" alt="Previous" width="10" />
+              Previous
+            </button>
+            <div class="page-number-selected" id="pageNumber">1</div>
+            <div class="page-number" id="pageNumber">2</div>
+            <button id="nextBtn" onclick="nextPage()">
+              Next
+              <img src="/images/ArrowRight.svg" alt="Next" width="10" />
+            </button>
+          </div>
+        </div>
+        <!-- All NFTs Section end -->
+      </div>
+    </main>
+    <script src="/js/assets.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

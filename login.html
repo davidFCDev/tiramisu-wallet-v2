@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/login.css" />
+  </head>
+  <body>
+    <header class="login-header">
+      <a href="/index.html" class="logo">
+        <img src="/images/logo.png" alt="Tiramisu Wallet" width="80" />
+      </a>
+      <h2><span>Tiramisu</span> Wallet</h2>
+      <p>
+        Please create your Tiramisu Wallet account. Select your username and
+        password.
+      </p>
+    </header>
+    <main class="main-container">
+      <section class="login">
+        <div class="login-card">
+          <div class="login-img-container">
+            <h1><span>Welcome</span> Back.</h1>
+            <img src="/images/Bitcoin.svg" alt="Bitcoin" />
+          </div>
+          <form
+            class="login-form"
+            method="POST"
+            onsubmit="login(); return false;"
+          >
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Username"
+            />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+            />
+            <div class="login-check">
+              <div class="login-robot">
+                <input type="checkbox" id="terms" name="terms" />
+                <label for="terms"> I'm not a robot </label>
+              </div>
+              <img src="/images/no-image.svg" alt="No-image" />
+            </div>
+            <button class="btn" type="submit">
+              <h2>Login</h2>
+            </button>
+            <button class="outline-btn google-btn">
+              <img src="/images/Google.svg" alt="Google" />
+              <h2>Login with Google</h2>
+            </button>
+          </form>
+        </div>
+        <div class="login-final-text">
+          <p>
+            Don't have an account?
+            <a href="/register.html">Register here</a>
+          </p>
+          <p>
+            Still need help?
+            <a href="#">Contact Support</a>
+          </p>
+        </div>
+      </section>
+      <script src="/js/script.js"></script>
+    </main>
+  </body>
+</html>

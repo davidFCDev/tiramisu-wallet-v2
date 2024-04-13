@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currencies</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/currencies.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <img src="/images/logo.png" alt="Tiramisu Wallet" />
+        <h2><span>Tiramisu</span> Wallet</h2>
+      </div>
+      <ul class="nav-list">
+        <li><a href="/index.html">Home</a></li>
+        <div class="vertical-bar"></div>
+        <li style="position: relative; cursor: pointer" class="assets-dropdown">
+          <span>Assets</span>
+          <img src="/images/DownArrow.svg" alt="Down Arrow" width="12" />
+          <div class="route-modal">
+            <a href="currencies.html">Currencies</a>
+            <a href="nfts.html">All NFTs</a>
+            <a href="collections.html">NFT Collections</a>
+          </div>
+        </li>
+        <div class="vertical-bar"></div>
+        <li><a href="https://taro-wallet.gitbook.io/taro-wallet/how-to-use-the-wallet">Instructions</a></li>
+        <div class="vertical-bar"></div>
+        <li><a href="/my-wallet.html">My wallet</a></li>
+      </ul>
+      <div style="display: flex; align-items: center; gap: 1rem">
+        <button class="btn sign-up">
+          <a href="register.html">
+            <h2>Sign Up</h2>
+          </a>
+        </button>
+        <button class="outline-btn sign-in">
+          <a href="login.html">
+            <h2>Sign In</h2>
+          </a>
+        </button>
+        <div class="menu-container">
+          <button class="menu-btn" style="background-color: transparent">
+            <img src="/images/Menu.svg" alt="Menu" />
+          </button>
+          <div class="menu-modal">
+            <ul>
+              <li>
+                <a href="/">
+                  <img src="/images/BlueHome.svg" alt="Home" width="22" />
+                  <p>Home</p>
+                </a>
+              </li>
+              <li>
+                <a href="/my-wallet.html">
+                  <img src="/images/BlueWallet.svg" alt="Wallet" width="22" />
+                  <p>My wallet</p>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://taro-wallet.gitbook.io/taro-wallet/how-to-use-the-wallet"
+                >
+                  <img
+                    src="/images/BlueArrow.svg"
+                    alt="Instructions"
+                    width="22"
+                  />
+                  <p>Instructions</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="/currencies.html">
+                  <img
+                    src="/images/BlueCoins.svg"
+                    alt="Currencies"
+                    width="22"
+                  />
+                  <p>Currencies</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="/nfts.html">
+                  <img
+                    src="/images/BlueCollections.svg"
+                    alt="All NFTs"
+                    width="22"
+                  />
+                  <p>All NFTs</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="/collections.html">
+                  <img
+                    src="/images/BlueDiamond.svg"
+                    alt="NFT Collections"
+                    width="22"
+                  />
+                  <p>NFT Collections</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+    <main class="main-container">
+      <section class="currencies">
+        <div class="currencies-text">
+          <h2 class="title">Currencies</h2>
+          <hr class="line" />
+          <div class="currencies-description">
+            <h3>Currencies on Tiramisu</h3>
+            <p>
+              A full list of currencies / fungible taproot assets tokens
+              available on Tiramisu wallet along with their details and prices.
+            </p>
+          </div>
+        </div>
+
+        <!-- DESKTOP -->
+        <div class="card-container" id="currenciesCardContainer">
+          <!-- Card List Here -->
+        </div>
+        <!-- DESKTOP END -->
+
+        <!-- MOBILE -->
+        <div
+          class="responsive-card-container"
+          id="responsiveCurrenciesCardContainer"
+        >
+          <!-- Card List Here -->
+        </div>
+        <!-- MOBILE END -->
+
+        <div class="page-selector">
+          <button id="prevBtn" onclick="prevPage()">
+            <img src="/images/ArrowLeft.svg" alt="Previous" width="10" />
+            Previous
+          </button>
+          <div class="page-number-selected" id="pageNumber">1</div>
+          <div class="page-number" id="pageNumber">2</div>
+          <button id="nextBtn" onclick="nextPage()">
+            Next
+            <img src="/images/ArrowRight.svg" alt="Next" width="10" />
+          </button>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-text">
+        <img src="/images/logo.png" alt="Tiramisu Wallet" width="80" />
+        <h2><span>Tiramisu</span> Wallet</h2>
+        <p>
+          A cryptocurrency wallet for Taproot assets protocol. Send, receive,
+          exchange and store Taproot Assets.
+        </p>
+      </div>
+      <div class="socials-container">
+        <div class="footer-socials">
+          <a href="#"><img src="/images/Youtube.svg" alt="Youtube" /></a>
+          <a href="#"><img src="/images/Discord.svg" alt="Discord.svg" /></a>
+          <a href="#"><img src="/images/Twitter.svg" alt="Twitter.svg" /></a>
+          <a href="#"><img src="/images/Telegram.svg" alt="Telegram.svg" /></a>
+          <a href="#"><img src="/images/Reddit.svg" alt="Reddit.svg" /></a>
+        </div>
+        <div class="footer-rights">
+          <span>© 2023, All Rights Reserved</span>
+          <span>Privacy Policy | Terms & Conditions</span>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+    <script src="/js/script.js"></script>
+    <script src="/js/currencies.js"></script>
+  </body>
+</html>

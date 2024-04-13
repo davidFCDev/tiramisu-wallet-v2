@@ -1,0 +1,129 @@
+/** New Wallet Page **/
+
+.newwallet-section {
+  min-height: 90vh;
+  background-color: var(--color-blue2);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem;
+  border-radius: 15px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .newwallet-section {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.bitcoin-image {
+  width: 37%;
+  position: absolute;
+  right: 4%;
+  bottom: 4%;
+}
+
+@media (max-width: 768px) {
+  .bitcoin-image {
+    width: 66%;
+    position: relative;
+    right: auto;
+    bottom: auto;
+    margin: 0 auto;
+  }
+}
+
+.newwallet-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.newwallet-container button {
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  background-color: var(--color-skyblue);
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 25px;
+}
+
+.newwallet-container button:hover {
+  filter: brightness(0.8);
+}
+
+.newwallet-container p {
+  font-size: 1.3rem;
+}
+
+@media (max-width: 768px) {
+  .newwallet-container p {
+    font-size: 1.05rem;
+    font-weight: 300;
+    line-height: 1.8;
+  }
+}
+
+.newwallet-currency {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+}
+
+.select-container {
+  margin-top: 1rem;
+  width: 250px;
+  border: 3px solid #6e33e9;
+  padding: 0.2rem 1rem;
+  border-radius: 10px;
+  display: flex;
+}
+
+.select-container:hover {
+  border: 3px solid #8459e2;
+  cursor: pointer;
+}
+
+.select-container img {
+  width: 1rem;
+  right: 0.5rem;
+  z-index: 2;
+}
+
+.newwallet-currency select {
+  cursor: pointer;
+  color: white;
+  border-radius: 10px;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  padding: 0.8rem 0rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: none;
+  font-size: 1rem;
+  position: relative;
+}
+
+.newwallet-currency .option {
+  margin: 0.2rem;
+  color: rgb(255, 255, 255);
+  background-color: var(--color-blue2);
+}
+
+.newwallet-currency span {
+  font-size: 0.8rem;
+  font-weight: 200;
+}

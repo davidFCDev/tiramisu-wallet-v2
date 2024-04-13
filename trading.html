@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trading</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/trading.css" />
+    <!-- <link rel="stylesheet" href="/css/assets.css" /> -->
+    <!-- <link rel="stylesheet" href="/css/ask-bids.css" /> -->
+  </head>
+  <body>
+    <!-- DESKTOP -->
+    <nav class="sidebar">
+      <div class="tiramisu-logo">
+        <a href="/index.html" class="logo">
+          <img src="/images/logo.png" alt="Tiramisu Wallet" width="75" />
+        </a>
+        <h2><span>Tiramisu</span> Wallet</h2>
+      </div>
+      <div class="routes">
+        <a href="/dashboard.html" class="route">
+          <img src="/images/Meter.svg" alt="Home" width="22" />
+          Dashboard
+        </a>
+        <a href="/my-wallet.html" class="route">
+          <img src="/images/WalletSmall.svg" alt="My Wallet" width="22" />
+          My wallet
+        </a>
+        <a href="/add-wallet.html" class="route">
+          <img src="/images/Plus.svg" alt="Add Wallet" width="22" />
+          Add new wallet
+        </a>
+        <a href="/assets.html" class="route">
+          <img src="/images/Coins.svg" alt="Assets" width="22" />
+          Assets
+        </a>
+        <a href="/trading.html" class="route selected">
+          <img src="/images/SmallSwap.svg" alt="Trading" width="22" />
+          Trading
+        </a>
+        <a href="/import-asset.html" class="route">
+          <img src="/images/Download.svg" alt="Import New Asset" width="22" />
+          Import new asset
+        </a>
+        <a href="/mint-asset.html" class="route">
+          <img src="/images/Download.svg" alt="Mint Assets" width="22" />
+          Mint new assets
+        </a>
+        <a href="/deposit-assets.html" class="route">
+          <img src="/images/Download2.svg" alt="Deposit Assets" width="22" />
+          Deposit assets
+        </a>
+        <a href="/withdraw-asset.html" class="route">
+          <img src="/images/Coliseum.svg" alt="Withdraw assets" width="22" />
+          Withdraw assets
+        </a>
+        <a href="/transactions.html" class="route">
+          <img src="/images/Clock.svg" alt="Transactions" width="22" />
+          Transactions
+        </a>
+        <a href="/wallet-home.html" class="route">
+          <img src="/images/Home.svg" alt="Wallet Home Page" width="22" />
+          Wallet home page
+        </a>
+        <a href="/scan-home.html" class="route">
+          <img src="/images/Qr.svg" alt="Scan" width="22" />
+          Scan
+        </a>
+      </div>
+      <a href="/my-wallet.html" class="balance-always-on-desktop">
+        <img src="/images/BitcoinLetter.svg" alt="balance" width="35" />
+        <div class="balance-always-on">
+          <span class="balance"><b>Bitcoin:</b> 423143 SAT</span>
+          <span class="pending"><b>Pending:</b> 000000 SAT</span>
+        </div>
+      </a>
+    </nav>
+    <nav class="topbar">
+      <!-- Notifications Modal -->
+      <div class="notifications-modal">
+        <div class="notifications-title">
+          <h3>Notifications</h3>
+          <img src="/images/Notification.svg" alt="Close" width="24" />
+        </div>
+        <p>You have 0 notifications today</p>
+        <h4>Today</h4>
+        <ul>
+          <li class="notification">
+            <div>
+              <img src="/images/Point.svg" alt="Point" />
+              <img src="/images/ImageUser.svg" alt="Profile" width="50" />
+            </div>
+            <div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+              <span>Time & Date</span>
+            </div>
+          </li>
+          <li class="notification">
+            <div>
+              <img src="/images/Point.svg" alt="Point" />
+              <img src="/images/Check.svg" alt="Check" width="50" />
+            </div>
+            <div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+              <span>Time & Date</span>
+            </div>
+          </li>
+          <li class="notification">
+            <div>
+              <img src="/images/Point.svg" alt="Point" />
+              <img src="/images/ImageUser.svg" alt="Profile" width="50" />
+            </div>
+            <div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+              <span>Time & Date</span>
+            </div>
+          </li>
+        </ul>
+        <h4>This Week</h4>
+        <ul>
+          <li class="notification">
+            <div>
+              <img src="/images/Point.svg" alt="Point" />
+              <img src="/images/Check.svg" alt="Check" width="50" />
+            </div>
+            <div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+              <span>Time & Date</span>
+            </div>
+          </li>
+          <li class="notification">
+            <div>
+              <img src="/images/Point.svg" alt="Point" />
+              <img src="/images/ImageUser.svg" alt="Profile" width="50" />
+            </div>
+            <div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+              <span>Time & Date</span>
+            </div>
+          </li>
+          <li class="notification">
+            <div>
+              <img src="/images/Point.svg" alt="Point" />
+              <img src="/images/ImageUser.svg" alt="Profile" width="50" />
+            </div>
+            <div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+              <span>Time & Date</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- Notifications Modal end -->
+      <!-- User Modal -->
+      <div class="user-modal">
+        <div>
+          <img src="/images/MyWallet.svg" alt="My wallet" width="26" />
+          <p>My wallet</p>
+        </div>
+        <div>
+          <img
+            src="/images/Logout.svg"
+            alt="Logout"
+            width="24"
+            style="padding-left: 1px"
+          />
+          <p>Logout</p>
+        </div>
+      </div>
+      <!-- User Modal end -->
+      <div class="topbar-title">
+        <img
+          src="/images/BlueCoins.svg"
+          alt="Available Currencies"
+          width="32"
+        />
+        <h2>Tradings</h2>
+      </div>
+      <div class="profile-container">
+        <div class="search">
+          <img src="/images/Search.svg" alt="Search" width="24" />
+          <input type="text" placeholder="Search" />
+        </div>
+        <img
+          class="notification-icon topbar-icon"
+          src="/images/Ring.svg"
+          alt="Notification"
+          width="24"
+        />
+        <img src="/images/ImageUser.svg" alt="Profile" class="user-image" />
+        <img
+          class="topbar-icon"
+          id="dropDown"
+          src="/images/WhiteDownArrow.svg"
+          alt="Arrow Down"
+          width="20px"
+          style="cursor: pointer"
+        />
+      </div>
+    </nav>
+    <!-- DESKTOP END -->
+
+    <!-- MOBILE -->
+    <nav class="responsive-topbar">
+      <!-- Notifications Modal -->
+      <div class="responsive-notifications-modal">
+        <div class="notifications-title">
+          <h3>Notifications</h3>
+          <img src="/images/Notification.svg" alt="Notifications" width="20" />
+        </div>
+        <p>You have 0 notifications today</p>
+        <h4>Today</h4>
+        <ul>
+          <li class="notification">
+            <div class="notification-image">
+              <img src="/images/Point.svg" alt="Point" />
+              <img src="/images/ImageUser.svg" alt="Profile" width="40" />
+            </div>
+            <div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+              <span>Time & Date</span>
+            </div>
+          </li>
+          <li class="notification">
+            <div class="notification-image">
+              <img src="/images/Point.svg" alt="Point" />
+              <img src="/images/ImageUser.svg" alt="Profile" width="40" />
+            </div>
+            <div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+              <span>Time & Date</span>
+            </div>
+          </li>
+          <li class="notification">
+            <div class="notification-image">
+              <img src="/images/Point.svg" alt="Point" />
+              <img src="/images/ImageUser.svg" alt="Profile" width="40" />
+            </div>
+            <div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+              <span>Time & Date</span>
+            </div>
+          </li>
+        </ul>
+        <h4>This Week</h4>
+        <ul>
+          <li class="notification">
+            <div class="notification-image">
+              <img src="/images/Point.svg" alt="Point" />
+              <img src="/images/Check.svg" alt="Check" width="40" />
+            </div>
+            <div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+              <span>Time & Date</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- Notifications Modal end -->
+      <div class="first-row-topbar">
+        <div class="responsive-logo">
+          <a href="/index.html" class="logo">
+            <img src="/images/logo.png" alt="Tiramisu Wallet" width="75" />
+          </a>
+          <h2><span>Tiramisu</span> Wallet</h2>
+        </div>
+        <a href="/my-wallet.html">
+          <div class="balance-always-on">
+            <span class="balance"><b>Bitcoin:</b> 423143 SAT</span>
+            <span class="pending"><b>Pending:</b> 000000 SAT</span>
+          </div>
+        </a>
+        <img
+          class="responsive-notification-icon"
+          src="/images/Ring.svg"
+          alt="Notification"
+          width="24"
+        />
+      </div>
+      <div class="search-container">
+        <div class="search">
+          <img src="/images/Search.svg" alt="Search" />
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+      <div class="topbar-title">
+        <img
+          src="/images/PurpleCoins.svg"
+          alt="Available Currencies"
+          width="32"
+        />
+        <h2>Tradings</h2>
+      </div>
+    </nav>
+    <nav class="responsive-bottombar">
+      <div class="responsive-menu-modal">
+        <div class="responsive-modal-routes">
+          <a href="#" class="responsive-modal-route">
+            <img src="/images/WhiteLogout.svg" alt="Logout" />
+            <span>Logout</span>
+          </a>
+          <a href="add-wallet.html" class="responsive-modal-route">
+            <img src="/images/Plus.svg" alt="Add" />
+            <span>Add new wallet</span>
+          </a>
+          <a href="import-asset.html" class="responsive-modal-route">
+            <img src="/images/Download2.svg" alt="Upload" />
+            <span>Import new asset</span>
+          </a>
+          <a href="mint-asset.html" class="responsive-modal-route">
+            <img src="/images/Download2.svg" alt="Upload" />
+            <span>Mint new asset</span>
+          </a>
+          <a href="transactions.html" class="responsive-modal-route">
+            <img src="/images/Clock.svg" alt="Transactions" />
+            <span>Transactions</span>
+          </a>
+          <a href="dashboard.html" class="responsive-modal-route">
+            <img src="/images/Home.svg" alt="Dashboard" />
+            <span>Wallet home page</span>
+          </a>
+        </div>
+      </div>
+      <a href="trading.html" class="swap-container">
+        <img src="/images/WhiteSwap.svg" alt="Swap" />
+      </a>
+      <div class="bottombar-container">
+        <a href="dashboard.html" class="bottombar-item">
+          <img src="/images/Meter.svg" alt="Dashboard" width="30" />
+          <span>Dashboard</span>
+        </a>
+        <a href="my-wallet.html" class="bottombar-item">
+          <img src="/images/WalletSmall.svg" alt="Wallet" width="26" />
+          <span>My wallet</span>
+        </a>
+      </div>
+      <div class="bottombar-container">
+        <a href="assets.html" class="bottombar-item" style="margin-right: 1rem">
+          <img src="/images/Coins.svg" alt="Assets" width="32" />
+          <span>Assets</span>
+        </a>
+        <div class="bottombar-item responsive-menu-btn">
+          <img src="/images/Menu.svg" alt="Menu" width="28" />
+          <span>More</span>
+        </div>
+      </div>
+    </nav>
+    <!-- MOBILE END -->
+
+    <main class="container-page">
+      <div class="trading-section">
+        <!-- Buttons -->
+        <div class="btn-container">
+          <button
+            id="lpBtn"
+            class="btn"
+            data-show="lp-section"
+            data-hide="order-section,create-section,listNft-section,orderCurrency-section,orderNft-section"
+          >
+            <img src="/images/Coins.svg" alt="My LPs" width="26" />
+            <h3>My LPs</h3>
+          </button>
+          <button
+            id="orderBtn"
+            class="outline-btn"
+            data-show="order-section"
+            data-hide="lp-section,create-section,listNft-section,orderCurrency-section,orderNft-section"
+          >
+            <img src="/images/Coins.svg" alt="My Orders" width="26" />
+            <h3>My Orders</h3>
+          </button>
+          <button
+            id="createBtn"
+            class="outline-btn"
+            data-show="create-section"
+            data-hide="lp-section,order-section,listNft-section,orderCurrency-section,orderNft-section"
+          >
+            <img src="/images/Coins.svg" alt="Create LP" width="26" />
+            <h3>Create LP</h3>
+          </button>
+          <button
+            id="listBtn"
+            class="outline-btn"
+            data-show="listNft-section"
+            data-hide="lp-section,order-section,create-section,orderCurrency-section,orderNft-section"
+          >
+            <img src="/images/Diamond.svg" alt="List NFT" width="26" />
+            <h3>List NFT</h3>
+          </button>
+          <button
+            id="orderCurrencyBtn"
+            class="outline-btn"
+            data-show="orderCurrency-section"
+            data-hide="lp-section,order-section,create-section,listNft-section,orderNft-section"
+          >
+            <img
+              src="/images/Diamond.svg"
+              alt="Make Order Currency"
+              width="26"
+            />
+            <h3>Make Order Currency</h3>
+          </button>
+          <button
+            id="orderNftBtn"
+            class="outline-btn"
+            data-show="orderNft-section"
+            data-hide="lp-section,order-section,create-section,listNft-section,orderCurrency-section"
+          >
+            <img src="/images/Diamond.svg" alt="Make Order NFT" width="26" />
+            <h3>Make Order NFT</h3>
+          </button>
+        </div>
+
+        <!-- Custom Select -->
+        <div class="custom-select-container">
+          <select id="sectionSelector">
+            <option value="lp-section">My LP</option>
+            <option value="order-section">My Orders</option>
+            <option value="create-section">Create LP</option>
+            <option value="list-section">List NFT</option>
+            <option value="orderCurrency-section">Make Order Currency</option>
+            <option value="orderNft-section">Make Order NFT</option>
+          </select>
+        </div>
+
+        <!-- My LPs Section -->
+        <div class="box-container" id="lp-section">
+          <div class="assets-container" id="currency-section">
+            <div class="cards-container" id="currenciesCardContainer">
+              <!-- LPs Card -->
+
+              <!-- desktop card -->
+              <div class="lp-card card">
+                <div class="img-container">
+                  <img src="/images/no-image2.svg" alt="no-image" width="50" />
+                </div>
+                <div class="card-description">
+                  <h3>Currency Name</h3>
+                </div>
+                <div class="card-actions">
+                  <div class="card-contract">
+                    <span style="white-space: nowrap">780.44 SAT / 1 AC</span>
+                  </div>
+                  <div class="card-buttons">
+                    <button>
+                      <img src="/images/trash.svg" alt="Down" width="20" />
+                      <span>Delete</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- LPs Card End -->
+            </div>
+          </div>
+          <div class="page-selector">
+            <button id="prevBtn" onclick="prevPage()">
+              <img src="/images/ArrowLeft.svg" alt="Previous" width="10" />
+              Previous
+            </button>
+            <div class="page-number-selected" id="pageNumber">1</div>
+            <div class="page-number" id="pageNumber">2</div>
+            <button id="nextBtn" onclick="nextPage()">
+              Next
+              <img src="/images/ArrowRight.svg" alt="Next" width="10" />
+            </button>
+          </div>
+        </div>
+        <!-- My LPs Section end -->
+
+        <!-- My Orders Section -->
+        <div class="box-container" id="order-section" style="display: none">
+          <!-- Order Item -->
+
+          <!-- desktop card -->
+
+          <div class="asset-item">
+            <div class="" style="display: flex; justify-content: space-between">
+              <div class="first-detail">
+                <img
+                  src="/images/Transaction.svg"
+                  alt="Transaction"
+                  width="50"
+                  class="reload-image"
+                />
+                <div class="name-text">
+                  <h3>Bid for BitcoinGirl</h3>
+                  <span
+                    >100.000000 SAT /
+                    <img src="/images/Diamond.svg" />
+                  </span>
+                </div>
+              </div>
+              <button
+                class="action-btn"
+                style="background-color: var(--color-violet); color: white"
+              >
+                DELETE
+              </button>
+              <div class="second-detail">
+                <h4>Size</h4>
+                <img src="/images/Diamond.svg" />
+              </div>
+              <div class="third-detail">
+                <h4>Total Cost</h4>
+                <p>100 SAT</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- responsive card -->
+          <div class="responsive-asset-item">
+            <div class="" style="display: flex; justify-content: space-between">
+              <div class="responsive-asset-details">
+                <div class="responsive-asset-detail">
+                  <h3>Bid for BitcoinGirl</h3>
+                  <span
+                    >100.000000 SAT / <img src="/images/Diamond.svg"
+                  /></span>
+                </div>
+                <div class="responsive-asset-detail">
+                  <h4>Size</h4>
+                  <img src="/images/Diamond.svg" width="20" />
+                </div>
+              </div>
+              <div class="responsive-asset-actions">
+                <img
+                  src="/images/BlueArrows.svg"
+                  alt="Transaction"
+                  width="30px"
+                />
+                <button class="btn">BUY</button>
+              </div>
+            </div>
+          </div>
+          <!-- responsive card end -->
+
+          <!-- Order Item End -->
+          <div class="page-selector">
+            <button id="prevBtn" onclick="prevPage()">
+              <img src="/images/ArrowLeft.svg" alt="Previous" width="10" />
+              Previous
+            </button>
+            <div class="page-number-selected" id="pageNumber">1</div>
+            <div class="page-number" id="pageNumber">2</div>
+            <button id="nextBtn" onclick="nextPage()">
+              Next
+              <img src="/images/ArrowRight.svg" alt="Next" width="10" />
+            </button>
+          </div>
+        </div>
+        <!-- My Orders Section end -->
+
+        <!-- Create LP Section -->
+        <div class="box-container" id="create-section" style="display: none">
+          <div class="box-content">
+            <p>
+              Select the currency you would like to create a liquidity pool for.
+              Note that in order to create an LP for a currency you have to be
+              the original owner of the currency. Also note that if you are the
+              LP creator your BTC balance as well as the balance for the
+              respective currency will become a liquidity pool for the currency.
+              The price of the currency will be determined as (your curriency
+              balance)/(your BTC balance).
+            </p>
+            <form class="form-container">
+              <h3>Currency:</h3>
+              <div>
+                <div class="select-container">
+                  <select name="select-form" id="currency"></select>
+                  <img src="/images/WhiteDownArrow.svg" alt="Down Arrow" />
+                </div>
+                <span>Taproot Asset to be exchanged</span>
+              </div>
+              <button><h3>OFFER</h3></button>
+            </form>
+          </div>
+        </div>
+        <!-- Create LP Section end -->
+
+        <!-- List NFT Section -->
+        <div class="box-container" id="listNft-section" style="display: none">
+          <div class="box-content">
+            <p>
+              Please select the NFT you would like to list on the exchange for a
+              fixed price and the price you would like to list it for.
+            </p>
+            <form class="form-container">
+              <div class="section-form">
+                <h3>Currency:</h3>
+                <div>
+                  <div class="select-container">
+                    <select name="select-form" id="currency"></select>
+                    <img src="/images/WhiteDownArrow.svg" alt="Down Arrow" />
+                  </div>
+                  <span>Taproot Asset to be exchanged</span>
+                </div>
+              </div>
+              <div class="section-form">
+                <h3>Price SAT:</h3>
+                <div class="input-container">
+                  <input class="input-form" type="text" id="price-sat" />
+                  <span
+                    >Price in SATs that the asset should be exchanged for.</span
+                  >
+                </div>
+              </div>
+              <button><h3>OFFER</h3></button>
+            </form>
+          </div>
+        </div>
+        <!-- List NFT Section end -->
+
+        <!-- Order Currency Section -->
+        <div
+          class="box-container"
+          id="orderCurrency-section"
+          style="display: none"
+        >
+          <div class="box-content">
+            <p>
+              Please select the NFT you would like to list on the exchange for a
+              fixed price and the price you would like to list it for.
+            </p>
+            <form class="form-container">
+              <div class="row-form">
+                <div class="section-form">
+                  <h3>Type:</h3>
+                  <div class="input-container">
+                    <div class="select-container">
+                      <select name="select-form" id="type"></select>
+                      <img src="/images/WhiteDownArrow.svg" alt="Down Arrow" />
+                    </div>
+                    <span>Type of listing - Bid or Ask</span>
+                  </div>
+                </div>
+                <div class="section-form">
+                  <h3>Amount:</h3>
+                  <div class="input-container">
+                    <input class="input-form" type="text" id="amount" />
+                    <span>Amount of currency to be exchanged</span>
+                  </div>
+                </div>
+              </div>
+              <div class="row-form">
+                <div class="section-form">
+                  <h3>Currency:</h3>
+                  <div class="input-container">
+                    <input class="input-form" type="text" id="currency" />
+                    <span>Taproot Asset to be exchanged</span>
+                  </div>
+                </div>
+                <div class="section-form">
+                  <h3>Price SAT:</h3>
+                  <div class="input-container">
+                    <input class="input-form" type="text" id="price-sat" />
+                    <span
+                      >Price in SATs that the asset should be exchanged
+                      for.</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <button><h3>CREATE ORDER</h3></button>
+            </form>
+          </div>
+        </div>
+        <!-- Order Currency Section end -->
+
+        <!-- Order NFT Section -->
+        <div class="box-container" id="orderNft-section" style="display: none">
+          <div class="box-content">
+            <p>
+              Select the currency and the amount you would like to create order
+              for.
+            </p>
+            <form class="form-container">
+              <div class="row-form">
+                <div class="section-form">
+                  <h3>Currency:</h3>
+                  <div class="input-container">
+                    <div class="select-container">
+                      <select name="select-form" id="currency"></select>
+                      <img src="/images/WhiteDownArrow.svg" alt="Down Arrow" />
+                    </div>
+                    <span>Taproot Asset to be exchanged</span>
+                  </div>
+                </div>
+                <div class="section-form">
+                  <h3>Price SAT:</h3>
+                  <div class="input-container">
+                    <input class="input-form" type="text" id="price-sat" />
+                    <span
+                      >Price in SATs that the asset should be exchanged
+                      for.</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <button><h3>CREATE ORDER</h3></button>
+            </form>
+          </div>
+        </div>
+        <!-- Order NFT Section end -->
+      </div>
+    </main>
+    <script src="/js/trading.js"></script>
+    <script src="/js/script.js"></script>
+    <script>
+      // Function to toggle card visibility based on window size
+      function toggleCards() {
+        const desktopCard = document.querySelector(".asset-item");
+        const responsiveCard = document.querySelector(".responsive-asset-item");
+        const breakpoint = 768; // Define your breakpoint for "smaller screens"
+
+        if (window.innerWidth <= breakpoint) {
+          desktopCard.style.display = "none";
+          responsiveCard.style.display = "block";
+        } else {
+          desktopCard.style.display = "block";
+          responsiveCard.style.display = "none";
+        }
+      }
+
+      // Initial check when the page loads
+      document.addEventListener("DOMContentLoaded", toggleCards);
+
+      // Add resize event listener to window
+      window.addEventListener("resize", toggleCards);
+    </script>
+  </body>
+</html>

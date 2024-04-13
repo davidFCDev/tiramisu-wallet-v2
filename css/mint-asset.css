@@ -1,0 +1,127 @@
+/** Mint Asset page */
+
+.mint-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.btn-container {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-container button {
+  border-radius: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+  align-items: center;
+  padding: 0.7rem 2rem;
+}
+
+.custom-select-container {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .btn-container {
+    display: none;
+  }
+  .custom-select-container {
+    background-color: var(--color-violet);
+    width: 100%;
+    border: 3px solid var(--color-violet);
+    padding: 0.1rem 1rem;
+    border-radius: 10px;
+    display: flex;
+  }
+
+  .custom-select-container:hover {
+    background-color: var(--color-blue2);
+    cursor: pointer;
+  }
+  .custom-select-container select {
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    padding: 0.8rem 0rem;
+    font-size: 1rem;
+    position: relative;
+  }
+  .custom-select-container option {
+    color: rgb(255, 255, 255);
+    background-color: var(--color-blue2);
+    font-size: 0.7rem;
+  }
+}
+
+.box-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-blue4);
+  padding: 3rem;
+  border-radius: 15px;
+  border: 2px solid var(--color-violet);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 1.7;
+  letter-spacing: 0.5px;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .box-container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--color-blue4);
+    padding: 2rem 2rem 1rem 2rem;
+    border-radius: 15px;
+    border: 2px solid var(--color-violet);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1.7;
+    letter-spacing: 0.5px;
+  }
+}
+
+.form-container button h3 {
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+@media (max-width: 768px) {
+  .box-container p {
+    font-size: 0.9rem;
+    font-weight: 300;
+  }
+
+  .box-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .form-container button {
+    border-radius: 15px;
+    min-width: 140px;
+    padding: 0.8rem 1.2rem;
+    margin-top: 0.5rem;
+  }
+
+  .form-container button h3 {
+    font-size: 1rem;
+    font-weight: 800;
+  }
+}
